@@ -86,14 +86,18 @@ class AuthController extends Controller
         if (Auth::guard('instructor')->attempt(['email' => $request->email, 'provider' => 'LOCAL', 'password' => $request->password], $request->get('remember'))) {
             $api = new LicenseBoxAPI();
             $res = $api->verify_license();
+     
 
-            if ($res['status'] !== true) {
+            /* if ($res['status'] !== true) {
                 AdminSetting::find(42)->update(['value' => 0]);
                 return redirect('activeLicence');
             } else {
-                AdminSetting::find(42)->update(['value' => 1]);
+               AdminSetting::find(42)->update(['value' => 1]);
                
-            }
+            }*/
+            
+            
+            
             $user = Auth::guard('instructor')->user();
 
             if ($user->status != 1) {
@@ -141,13 +145,14 @@ class AuthController extends Controller
             $api = new LicenseBoxAPI();
             $res = $api->verify_license();
 
-            if ($res['status'] !== true) {
+            /*if ($res['status'] !== true) {
                 AdminSetting::find(42)->update(['value' => 0]);
                 return redirect('activeLicence');
             } else {
                 AdminSetting::find(42)->update(['value' => 1]);
                
-            }
+            }*/
+            
             $user = Auth::guard('student')->user();
             if ($user->status != 1) {
                 Auth::guard('student')->logout();

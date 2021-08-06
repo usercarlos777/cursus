@@ -144,7 +144,7 @@ $api = new LicenseBoxAPI(); // Initialize a new LicenseBoxAPI object
                     </div>
                     <?php
                             // Add or remove your script's requirements below
-                            if (phpversion() < "7.4") {
+                            if (phpversion() < "7.0") {
                                 $errors = true;
                                 echo "<div class='notification is-danger' style='padding:12px;'><i class='fa fa-times'></i> Current PHP version is " . phpversion() . "! minimum PHP 7.2 or higher required.</div>";
                             } else {

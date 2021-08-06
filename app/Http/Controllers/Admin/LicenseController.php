@@ -110,13 +110,13 @@ class LicenseController extends Controller
             $api = new LicenseBoxAPI();
             $res = $api->verify_license();
 
-            if ($res['status'] !== true) {
+            /*if ($res['status'] !== true) {
                 AdminSetting::find(24)->update(['value' => 0]);
                 return redirect('admin/home');
             } else {
                 AdminSetting::find(24)->update(['value' => 1]);
                 return redirect('admin/home');
-            }
+            }*/
         } else {
             return Redirect::back()->with('error_msg', 'Invalid Username or Password');
         }
