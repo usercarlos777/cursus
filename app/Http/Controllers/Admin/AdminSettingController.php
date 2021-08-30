@@ -304,15 +304,7 @@ class AdminSettingController extends Controller
 
     public function dashboard()
     {
-        $api = new LicenseBoxAPI();
-        $res = $api->verify_license();
-
-        if ($res['status'] !== true) {
-            AdminSetting::find(42)->update(['value' => 0]);
-            return redirect('activeLicence');
-        } else {
-            AdminSetting::find(42)->update(['value' => 1]);
-        }
+    
         $master['tot_admin'] = User::count();
         $master['tot_ins'] = Instructor::count();
         $master['tot_stu'] = Student::count();

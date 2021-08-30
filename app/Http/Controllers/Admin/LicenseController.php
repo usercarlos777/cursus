@@ -107,8 +107,8 @@ class LicenseController extends Controller
         );
 
         if (Auth::attempt($userdata)) {
-            $api = new LicenseBoxAPI();
-            $res = $api->verify_license();
+            // $api = new LicenseBoxAPI();
+            // $res = $api->verify_license();
 
             /*if ($res['status'] !== true) {
                 AdminSetting::find(24)->update(['value' => 0]);

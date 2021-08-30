@@ -31,9 +31,7 @@ class IndexController extends Controller
 
     public function index()
     {
-        if (!env('DB_USERNAME')) {
-            return view("license.setupl");
-        }
+       
         $seo = AdminSetting::whereIn('id', [28, 29, 30, 31, 32])->get();
         
         JsonLdMulti::setTitle($seo[0]['value'] ?? env('APP_NAME'));

@@ -29,9 +29,9 @@ class AppServiceProvider extends ServiceProvider
     {
         //
         Schema::defaultStringLength(191);
-        if (env('DB_USERNAME')) {
+      
         View::share('admin_setting', AdminSetting::get());
         View::share('weblang', WebLanguage::get());
-        }
+        
     }
 }

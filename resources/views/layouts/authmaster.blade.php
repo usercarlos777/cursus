@@ -6,11 +6,11 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
     <title>Login - {{env("APP_NAME")}}</title>
     <link rel="icon" type="image/png" href="{{ static_asset('frontend/images/fav.png') }}">
-    <link href="{{ static_asset('frontend/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ static_asset('frontend/css/font-awesome.min.css')}}" rel="stylesheet">
+    <link href="{{ static_asset('/frontend/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ static_asset('/frontend/css/font-awesome.min.css')}}" rel="stylesheet">
    
-    <link rel="stylesheet" href="{{ static_asset('admin/assets/css/style.css') }}">
-    <link rel="stylesheet" href="{{ static_asset('admin/assets/css/components.css') }}">
+    <link rel="stylesheet" href="{{ static_asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ static_asset('assets/css/components.css') }}">
 </head>
 
 <body >
@@ -44,15 +44,15 @@
         </section>
     </div>
 
-   <script src="{{ static_asset('frontend/js/jquery.min.js') }}"></script>
-<script src="{{ static_asset('admin/assets/js/popper.min.js')}}">
+   <script src="{{ static_asset('/frontend/js/jquery.min.js') }}"></script>
+<script src="{{ static_asset('assets/js/popper.min.js')}}">
 </script>
-<script src="{{ static_asset('frontend/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-<script src="{{ static_asset('admin/assets/js/nicescroll.min.js')}}"></script>
-    <script src="{{ static_asset('admin/assets/js/stisla.js') }}"></script>
+<script src="{{ static_asset('/frontend/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ static_asset('assets/js/nicescroll.min.js')}}"></script>
+    <script src="{{ static_asset('assets/js/stisla.js') }}"></script>
 
-    <script src="{{ static_asset('admin/assets/js/scripts.js') }}"></script>
-    <script src="{{ static_asset('admin/assets/js/custom.js') }}"></script>
+    <script src="{{ static_asset('assets/js/scripts.js') }}"></script>
+    <script src="{{ static_asset('assets/js/custom.js') }}"></script>
 
 </body>
 

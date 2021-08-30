@@ -84,8 +84,8 @@ class AuthController extends Controller
     public function login(Request $request)
     {
         if (Auth::guard('instructor')->attempt(['email' => $request->email, 'provider' => 'LOCAL', 'password' => $request->password], $request->get('remember'))) {
-            $api = new LicenseBoxAPI();
-            $res = $api->verify_license();
+            // $api = new LicenseBoxAPI();
+            // $res = $api->verify_license();
      
 
             /* if ($res['status'] !== true) {
