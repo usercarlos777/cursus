@@ -21,14 +21,9 @@ class HelperController extends Controller
     public function uploadfile($file, $path)
     {
         $name = uniqid() . '.' . $file->getClientOriginalExtension();
-        if (env("FILE_SYSTEM") == "s3") {
-            Storage::disk('s3')->putFileAs($path, $file, $name, 'public');
-        } elseif (env("FILE_SYSTEM") == "wasabi") {
-            Storage::disk('wasabi')->putFileAs($path, $file, $name, 'public');
-        } else {
-            $destinationPath = public_path('/' . $path);
-            $file->move($destinationPath, $name);
-        }
+
+        Storage::disk('s3')->putFileAs($path, $file, $name, 'public');
+
         return $path . '/' . $name;
     }
     public function deleteImage($fileName)
@@ -37,16 +32,8 @@ class HelperController extends Controller
             if ($fileName == "default.png") {
                 return false;
             }
-            if (env("FILE_SYSTEM") == "s3") {
-                Storage::disk('s3')->delete($fileName);
-            } elseif (env("FILE_SYSTEM") == "wasabi") {
-                Storage::disk('wasabi')->delete($fileName);
-            } else {
-                $filePath = public_path() . '/' . $fileName;
-                if (file_exists($filePath)) {
-                    unlink($filePath);
-                }
-            }
+
+            Storage::disk('s3')->delete($fileName);
         } catch (\Throwable $th) {
             // throw $th;
         }

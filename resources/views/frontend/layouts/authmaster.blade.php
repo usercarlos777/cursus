@@ -11,14 +11,14 @@
 
 
   
-    <link rel="icon" type="image/png" href="{{ static_asset('frontend/images/fav.png') }}">
+    <link rel="icon" type="image/png" href="{{ static_asset('/frontend/images/fav.png') }}">
 
 
     @include('frontend.inc.styles')
     <style>
         .sign_in_up_bg:before {
 
-            background: url("{{ static_asset('frontend/images/sign.svg') }}") no-repeat center !important;
+            background: url("{{ static_asset('/frontend/images/sign.svg') }}") no-repeat center !important;
         }
     </style>
 </head>
@@ -27,8 +27,8 @@
         <div class="row justify-content-lg-center justify-content-md-center">
             <div class="col-lg-12">
                 <div class="main_logo25" id="logo">
-                    <a href="{{url('/')}}"><img src="{{ static_asset('frontend/images/logo.svg') }}" alt=""></a>
-                    <a href="{{url('/')}}"><img class="logo-inverse" src="{{ static_asset('frontend/images/ct_logo.svg') }}"
+                    <a href="{{url('/')}}"><img src="{{ static_asset('/frontend/images/logo.svg') }}" alt=""></a>
+                    <a href="{{url('/')}}"><img class="logo-inverse" src="{{ static_asset('/frontend/images/ct_logo.svg') }}"
                             alt=""></a>
                 </div>
             </div>
@@ -37,7 +37,7 @@
 
                 @yield("content")
                 <div class="sign_footer">
-                    <img src="{{ static_asset('frontend/images/sign_logo.png')}}" alt="">© {{date('Y')}}
+                    <img src="{{ static_asset('/frontend/images/sign_logo.png')}}" alt="">© {{date('Y')}}
                     <strong>{{env("APP_NAME")}}</strong>. {{__('All
                     Rights Reserved.')}}
                 </div>

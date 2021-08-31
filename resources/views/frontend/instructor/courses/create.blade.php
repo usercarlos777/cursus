@@ -7,7 +7,7 @@
     }
 </style>
 
-<link href="{{ static_asset('frontend/css/jquery-steps.css')}}" rel="stylesheet">
+<link href="{{ static_asset('/frontend/css/jquery-steps.css')}}" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -247,7 +247,7 @@ $currantstep = $currantstep ?? 0;
                                                 <div class="view_all_dt">
                                                     <div class="view_img_left">
                                                         <div class="view__img">
-                                                            <img src="{{ static_asset('frontend/images/courses/add_img.jpg')}}"
+                                                            <img src="{{ static_asset('/frontend/images/courses/add_img.jpg')}}"
                                                                 alt="">
                                                         </div>
                                                     </div>
@@ -279,7 +279,7 @@ $currantstep = $currantstep ?? 0;
                                                 <div class="view_all_dt">
                                                     <div class="view_img_left">
                                                         <div class="view__img">
-                                                            <img src="{{ static_asset('frontend/images/courses/add_video.jpg')}}"
+                                                            <img src="{{ static_asset('/frontend/images/courses/add_video.jpg')}}"
                                                                 alt="">
                                                         </div>
                                                     </div>
@@ -580,10 +580,10 @@ $currantstep = $currantstep ?? 0;
 @endsection
 
 @push('scripts')
-<script src="{{ static_asset('frontend/js/jquery-steps.min.js')}}"></script>
-<script src="{{ static_asset('frontend/js/course.js')}}"></script>
-<link href="{{ static_asset('admin/assets/js/summernote.min.css') }}" rel="stylesheet">
-<script src="{{ static_asset('admin/assets/js/summernote.min.js') }}"></script>
+<script src="{{ static_asset('/frontend/js/jquery-steps.min.js')}}"></script>
+<script src="{{ static_asset('/frontend/js/course.js')}}"></script>
+<link href="{{ static_asset('/admin/assets/js/summernote.min.css') }}" rel="stylesheet">
+<script src="{{ static_asset('/admin/assets/js/summernote.min.js') }}"></script>
 
 <script>
     "use strict";

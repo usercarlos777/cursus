@@ -2,8 +2,8 @@
 
 @push('styles')
 
-<link href="{{ static_asset('frontend/css/instructor-dashboard.css')}}" rel="stylesheet">
-<link href="{{ static_asset('frontend/css/instructor-responsive.css')}}" rel="stylesheet">
+<link href="{{ static_asset('/frontend/css/instructor-dashboard.css')}}" rel="stylesheet">
+<link href="{{ static_asset('/frontend/css/instructor-responsive.css')}}" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -19,7 +19,7 @@
                 <span class="crdbg_1">{{__('Today')}} {{$admin_setting[7]['value']}}{{$master['total_sell_d']}}</span>
             </div>
             <div class="card_dash_right">
-                <img src="{{ static_asset('frontend/images/dashboard/achievement.svg') }}" alt="">
+                <img src="{{ static_asset('/frontend/images/dashboard/achievement.svg') }}" alt="">
             </div>
         </div>
     </div>
@@ -31,7 +31,7 @@
                 <span class="crdbg_2">{{__('Today')}} {{$master['total_enroll_d']}}</span>
             </div>
             <div class="card_dash_right">
-                <img src="{{ static_asset('frontend/images/dashboard/graduation-cap.svg') }}" alt="">
+                <img src="{{ static_asset('/frontend/images/dashboard/graduation-cap.svg') }}" alt="">
             </div>
         </div>
     </div>
@@ -43,7 +43,7 @@
                 <span class="crdbg_3">{{__('Today')}} {{$master['total_student_d']}}</span>
             </div>
             <div class="card_dash_right">
-                <img src="{{ static_asset('frontend/images/dashboard/online-course.svg') }}" alt="">
+                <img src="{{ static_asset('/frontend/images/dashboard/online-course.svg') }}" alt="">
             </div>
         </div>
     </div>
@@ -55,7 +55,7 @@
                 <span class="crdbg_4">{{__('Today')}} {{$master['course_count_d']}}</span>
             </div>
             <div class="card_dash_right">
-                <img src="{{ static_asset('frontend/images/dashboard/knowledge.svg') }}" alt="">
+                <img src="{{ static_asset('/frontend/images/dashboard/knowledge.svg') }}" alt="">
             </div>
         </div>
     </div>

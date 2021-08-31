@@ -1,12 +1,12 @@
-<script src="{{ static_asset('frontend/js/vertical-responsive-menu.min.js') }}"></script>
-<script src="{{ static_asset('frontend/js/jquery.min.js') }}"></script>
-<script src="{{ static_asset('frontend/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-<script src="{{ static_asset('frontend/vendor/OwlCarousel/owl.carousel.js') }}"></script>
-<script src="{{ static_asset('frontend/vendor/semantic/semantic.min.js') }}"></script>
-<script src="{{ static_asset('frontend/js/custom.js') }}"></script>
-<script src="{{ static_asset('frontend/js/night-mode.js') }}"></script>
-<script src="{{ static_asset('frontend/vendor/snackbar/snackbar.min.js')}}"></script>
-<script src="{{ asset('frontend/js/OneSignalSDK.js')}}" async></script>
+<script src="{{ static_asset('/frontend/js/vertical-responsive-menu.min.js') }}"></script>
+<script src="{{ static_asset('/frontend/js/jquery.min.js') }}"></script>
+<script src="{{ static_asset('/frontend/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ static_asset('/frontend/vendor/OwlCarousel/owl.carousel.js') }}"></script>
+<script src="{{ static_asset('/frontend/vendor/semantic/semantic.min.js') }}"></script>
+<script src="{{ static_asset('/frontend/js/custom.js') }}"></script>
+<script src="{{ static_asset('/frontend/js/night-mode.js') }}"></script>
+<script src="{{ static_asset('/frontend/vendor/snackbar/snackbar.min.js')}}"></script>
+<script src="{{ asset('/frontend/js/OneSignalSDK.js')}}" async></script>
 
 <script>
   "use strict";

@@ -44,7 +44,7 @@
                                 <li>
                                     <a href="{{url('/')}}">
                                         <div class="footer_logo">
-                                            <img src="{{ static_asset('frontend/images/logo1.svg')}}" alt="">
+                                            <img src="{{ static_asset('/frontend/images/logo1.svg')}}" alt="">
                                         </div>
                                     </a>
                                 </li>

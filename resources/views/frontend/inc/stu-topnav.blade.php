@@ -7,8 +7,8 @@
         <span class="collapse_menu--label"></span>
     </button>
     <div class="main_logo" id="logo">
-        <a href="{{url('/')}}"><img src="{{ static_asset('frontend/images/logo.svg')}}" alt=""></a>
-        <a href="{{url('/')}}"><img class="logo-inverse" src="{{ static_asset('frontend/images/ct_logo.svg')}}" alt=""></a>
+        <a href="{{url('/')}}"><img src="{{ static_asset('/frontend/images/logo.svg')}}" alt=""></a>
+        <a href="{{url('/')}}"><img class="logo-inverse" src="{{ static_asset('/frontend/images/ct_logo.svg')}}" alt=""></a>
     </div>
     <div class="top-category">
         <div class="ui compact menu cate-dpdwn">
@@ -136,12 +136,12 @@
             </li>
             <li class="ui dropdown">
                 <a href="#" class="opts_account" title="Account">
-                    <img src="{{ static_asset('frontend/images/hd_dp.jpg') }}" alt="">
+                    <img src="{{ static_asset('/frontend/images/hd_dp.jpg') }}" alt="">
                 </a>
                 <div class="menu dropdown_account">
                     <div class="channel_my">
                         <div class="profile_link">
-                            <img src="{{ static_asset('frontend/images/hd_dp.jpg') }}" alt="">
+                            <img src="{{ static_asset('/frontend/images/hd_dp.jpg') }}" alt="">
                             <div class="pd_content">
                                 <div class="rhte85">
                                     <h6>{{auth('student')->user()->name ?? "Guest"}}</h6>

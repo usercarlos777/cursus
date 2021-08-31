@@ -425,9 +425,9 @@
 
 @endsection
 @push('scripts')
-<script src="{{ static_asset('frontend/js/course.js')}}"></script>
-<link href="{{ static_asset('admin/assets/js/summernote.min.css') }}" rel="stylesheet">
-<script src="{{ static_asset('admin/assets/js/summernote.min.js') }}"></script>
+<script src="{{ static_asset('/frontend/js/course.js')}}"></script>
+<link href="{{ static_asset('/admin/assets/js/summernote.min.css') }}" rel="stylesheet">
+<script src="{{ static_asset('/admin/assets/js/summernote.min.js') }}"></script>
 
 <script>
     "use strict";

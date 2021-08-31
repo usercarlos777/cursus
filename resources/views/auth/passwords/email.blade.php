@@ -23,7 +23,7 @@
                 <div class="col-md-12">
                     <div class="cmtk_group">
                         <div class="ct-logo">
-                            <a href="{{ url('/') }}"><img src="{{ static_asset('frontend/images/ct_logo.svg') }}" alt=""></a>
+                            <a href="{{ url('/') }}"><img src="{{ static_asset('/frontend/images/ct_logo.svg') }}" alt=""></a>
                         </div>
                         <div class="cmtk_dt">
                             <h4 class="thnk_coming_title">{{__('Forgot Password')}}</h4>

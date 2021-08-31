@@ -24,7 +24,7 @@
                     <div class="invoice_header_main">
                         <div class="invoice_header_item">
                             <div class="invoice_logo">
-                                <a href="{{url('/')}}"><img src="{{ static_asset('frontend/images/ct_logo.svg') }}" alt=""></a>
+                                <a href="{{url('/')}}"><img src="{{ static_asset('/frontend/images/ct_logo.svg') }}" alt=""></a>
                             </div>
                             <p>{{__('Invoice')}}</p>
                         </div>

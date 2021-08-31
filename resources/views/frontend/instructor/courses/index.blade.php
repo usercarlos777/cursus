@@ -376,7 +376,7 @@
                 </div>
                 <div class="tab-pane fade" id="pills-promotions" role="tabpanel" aria-labelledby="pills-promotions-tab">
                     <div class="promotion_tab mb-10">
-                        <img src="images/dashboard/promotion.svg" alt="">
+                        <img src="/frontend/images/dashboard/promotion.svg" alt="">
                         <h4>{{__('We Are come in future with this feature.')}}</h4>
                      
                     </div>

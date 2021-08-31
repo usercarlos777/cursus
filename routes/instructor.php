@@ -10,9 +10,15 @@ use App\Http\Controllers\Admin\FAQController;
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Instructor\AuthController;
 use App\Http\Controllers\Auth\VerificationController;
+use App\Http\Controllers\Instructor\CourseController;
+use App\Http\Controllers\Instructor\LectureController;
 use App\Http\Controllers\Auth\ResetPasswordController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
-
+use App\Http\Controllers\Instructor\BusinessController;
+use App\Http\Controllers\Instructor\InsVerifyController;
+use App\Http\Controllers\Instructor\LiveStreamController;
+use App\Http\Controllers\Instructor\CourseContentController;
+use App\Http\Controllers\Instructor\SpecialDiscountController;
 
 Route::get('/', function () {
     return redirect('instructor/home');
