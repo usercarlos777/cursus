@@ -7,7 +7,7 @@
         <span class="collapse_menu--label"></span>
     </button>
     <div class="main_logo" id="logo">
-        <a href="{{url('/')}}"><img src="{{ static_asset('frontend/images/logo.svg')}}" alt=""></a>
+        <a href="{{url('/')}}"><img src="{{ static_asset('frontend/images/logo-global-team-main.svg')}}" alt=""></a>
         <a href="{{url('/')}}"><img class="logo-inverse" src="{{ static_asset('frontend/images/ct_logo.svg')}}" alt=""></a>
     </div>
     <div class="top-category">
@@ -15,7 +15,6 @@
             <div class="ui simple dropdown item">
                 <a href="#" class="option_links p-0" title="categories"><i class="uil uil-apps"></i></a>
                 <div class="menu dropdown_category5">
-               
                     @foreach($categorys as $cat)
                     <a href="{{ route('categoriesCourses',['slug'=> str_replace(' ', '-', strtolower($cat->name)),'id' => $cat->id]) }}"
                         class="item channel_item">{{$cat->name}}</a>

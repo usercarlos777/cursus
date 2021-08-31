@@ -8,4 +8,3 @@
 
 <link rel="stylesheet" href="{{ static_asset('admin/assets/css/style.css') }}">
 <link rel="stylesheet" href="{{ static_asset('admin/assets/css/components.css') }}">
-

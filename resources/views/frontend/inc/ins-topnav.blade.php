@@ -7,15 +7,14 @@
         <span class="collapse_menu--label"></span>
     </button>
     <div class="main_logo" id="logo">
-        
-        <a href="{{route('ins-home')}}"><img src="{{ static_asset('frontend/images/logo.svg ')}}" alt=""></a>
+        <a href="{{route('ins-home')}}"><img src="{{ static_asset('frontend/images/logo-global-team-main.svg ')}}" alt=""></a>
         <a href="{{route('ins-home')}}"><img class="logo-inverse" src="{{ static_asset('frontend/images/ct_logo.svg')}}" alt=""></a>
     </div>
     <div class="top-category">
-        
+
     </div>
     <div class="search120">
-       
+
     </div>
     <div class="header_right">
         <ul>
@@ -43,7 +42,7 @@
                     class="noti_count">{{$lcc}}</span></a>
             <div class="menu dropdown_ms">
                 @forelse ($lc as $ch)
-        
+
                 <a href="#" class="channel_my item">
                     <div class="profile_link">
                         <img src="{{ file_asset($d->user->image ?? "default.png") }}" alt="">
@@ -57,9 +56,7 @@
                 @empty
                 <a href="#" class="channel_my item">
                     <div class="profile_link">
-        
                         <div class="pd_content">
-        
                             <p>{{__('No Chat')}}</strong>.</p>
                             <span class="nm_time">{{__('Ones upon time')}}</span>
                         </div>
@@ -76,9 +73,7 @@
                     @forelse ($nl as $item)
                     <a href="#" class="channel_my item">
                         <div class="profile_link">
-            
                             <div class="pd_content">
-            
                                 <p>{{$item->title}}</p>
                                 <span class="nm_time">{{$item->created_at->diffForHumans()}}</span>
                             </div>
@@ -87,17 +82,13 @@
                     @empty
                     <a href="#" class="channel_my item">
                         <div class="profile_link">
-            
                             <div class="pd_content">
-            
                                 <p>{{__('No Notifications')}}</strong>.</p>
                                 <span class="nm_time">{{__('Ones upon time')}}</span>
                             </div>
                         </div>
                     </a>
                     @endforelse
-            
-            
                     <a class="vbm_btn" href="{{route('ins-notification')}}">View All <i class='uil uil-arrow-right'></i></a>
                 </div>
             </li>
@@ -121,7 +112,6 @@
                                 <span>{{auth('instructor')->user()->email ?? "Please Login to your account"}}</span>
                             </div>
                         </div>
-                  
                     </div>
                     <div class="night_mode_switch__btn">
                         <a href="#" id="night-mode" class="btn-night-mode">
@@ -141,7 +131,6 @@
                     @else
                     <a href="{{ url('login') }}" class="item channel_item">{{__('Sign in')}}</a>
                     <a href="{{ url('register') }}" class="item channel_item">{{__('Sign Up')}}</a>
-                    
                     @endif
                 </div>
             </li>

@@ -1,6 +1,6 @@
 
 <link href='{{ static_asset('frontend/vendor/unicons-2.0.1/css/unicons.css') }}' rel='stylesheet'>
-<link href="{{ static_asset('frontend/css/vertical-responsive-menu.min.css') }}" rel="stylesheet">
+<link href="{{ static_asset('frontend/css/vertical-responsive-menu.css') }}" rel="stylesheet">
 <link href="{{ static_asset('frontend/css/style.css') }}" rel="stylesheet">
 <link href="{{ static_asset('frontend/css/responsive.css') }}" rel="stylesheet">
 <link href="{{ static_asset('frontend/css/night-mode.css') }}" rel="stylesheet">

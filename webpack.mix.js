@@ -1,4 +1,4 @@
-const mix = require('laravel-mix');
+const mix = require("laravel-mix");
 
 /*
  |--------------------------------------------------------------------------
@@ -11,6 +11,19 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .vue()
-    .sass('resources/sass/app.scss', 'public/css');
+mix
+  .js("resources/js/app.js", "public/js")
+  .vue()
+  .sass("resources/sass/app.scss", "public/css")
+  .sass(
+    "resources/sass/frontend/instructor-dashboard.scss",
+    "public/frontend/css"
+  )
+  .sass("resources/sass/frontend/style.scss", "public/frontend/css")
+  .sass(
+    "resources/sass/frontend/vertical-responsive-menu.scss",
+    "public/frontend/css"
+  )
+  .options({
+    processCssUrls: false,
+  });

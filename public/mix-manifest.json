@@ -1,4 +1,7 @@
 {
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/frontend/css/style.css": "/frontend/css/style.css",
+    "/frontend/css/instructor-dashboard.css": "/frontend/css/instructor-dashboard.css",
+    "/css/app.css": "/css/app.css",
+    "/frontend/css/vertical-responsive-menu.css": "/frontend/css/vertical-responsive-menu.css"
 }

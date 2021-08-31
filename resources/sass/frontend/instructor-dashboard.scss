@@ -1,5 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap);
-@charset "UTF-8";
 /*===================== TABLE OF CONTENT =======================
 /*
 Table Of Content
@@ -11,12 +9,16 @@ Table Of Content
 5.  Top Scroll Bar
 
 =============================================================*/
+
 /* ================================================================================== 
 Fonts
 ===================================================================================== */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+@import '../colors';
 /* ================================================================================== 
 Reset Css
 ===================================================================================== */
+
 html,
 body,
 div,
@@ -279,13 +281,14 @@ blockquote {
     /* 35px / 24px */
   }
 }
+
 @media (min-width: 56.25em) {
   h1 {
     font-size: 3em;
     /* 3x body copy size = 48px */
     line-height: 1.05;
     /* keep to a multiple of the 20px line height 
-    and something more appropriate for display headings */
+	and something more appropriate for display headings */
   }
 
   h2 {
@@ -300,7 +303,9 @@ blockquote {
     line-height: 1.25;
   }
 }
+
 /* ================ CROSS BROWSER COMPATABILITY =============== */
+
 .ask-question,
 nav,
 .notification-box.active,
@@ -339,10 +344,15 @@ nav ul li a,
 .next-prev > a,
 nav ul li:hover > ul,
 .user-pro-img > a i {
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
 }
 
 /* === Body Scrollbar === */
+
 body::-webkit-scrollbar {
   width: 14px;
   height: 18px;
@@ -364,7 +374,8 @@ body::-webkit-scrollbar-thumb {
   background-clip: padding-box;
   -webkit-border-radius: 3px;
   background-color: rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: inset -1px -1px 0 rgba(0, 0, 0, 0.05), inset 1px 1px 0 rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: inset -1px -1px 0 rgba(0, 0, 0, 0.05),
+    inset 1px 1px 0 rgba(0, 0, 0, 0.05);
 }
 
 html {
@@ -386,7 +397,7 @@ body {
 
 .menu_left::-webkit-scrollbar-thumb {
   height: 50px;
-  background: rgba(136, 136, 136, 0.4);
+  background: hsla(0, 0%, 53.3%, 0.4);
 }
 
 .simplebar-content-wrapper::-webkit-scrollbar {
@@ -395,7 +406,7 @@ body {
 
 .simplebar-content-wrapper::-webkit-scrollbar-thumb {
   height: 50px;
-  background: rgba(136, 136, 136, 0.4);
+  background: hsla(0, 0%, 53.3%, 0.4);
 }
 
 .simplebar-content-wrapper2::-webkit-scrollbar {
@@ -404,10 +415,10 @@ body {
 
 .simplebar-content-wrapper2::-webkit-scrollbar-thumb {
   height: 50px;
-  background: rgba(136, 136, 136, 0.4);
+  background: hsla(0, 0%, 53.3%, 0.4);
 }
 
-input[type=text] {
+input[type="text"] {
   color: #333 !important;
 }
 
@@ -433,14 +444,16 @@ input[type=text] {
     margin-left: 60px;
   }
 }
+
 /*--- Left Side Footer ---*/
+
 .alrt_dot {
   position: absolute;
   right: 15px;
   font-size: 10px;
   font-weight: 500;
   color: #fff;
-  background: #13356d;
+  background: $sapphire;
   overflow: hidden;
   width: 5px;
   height: 5px;
@@ -468,7 +481,7 @@ input[type=text] {
 }
 
 .left_footer a:hover {
-  color: #13356d !important;
+  color: $sapphire !important;
 }
 
 .left_footer_content {
@@ -493,6 +506,7 @@ input[type=text] {
 }
 
 /*--- Header ---*/
+
 header {
   position: fixed;
   z-index: 999;
@@ -574,7 +588,7 @@ i.icon1 {
   position: absolute;
   top: 3px;
   right: 8px;
-  background: #13356d;
+  background: $sapphire;
   color: #fff;
   width: 16px;
   height: 16px;
@@ -598,7 +612,7 @@ i.icon1 {
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   color: #fff;
-  background: #13356d;
+  background: $sapphire;
   padding: 9px 15px;
   border-radius: 3px;
   margin-right: 10px;
@@ -626,8 +640,7 @@ i.icon1 {
 
 .user_img img {
   width: 30px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 50%;
   margin-left: 17px;
   margin-right: 15px;
@@ -715,7 +728,7 @@ i.icon1 {
 }
 
 .dp_link_12:hover {
-  color: #13356d !important;
+  color: $sapphire !important;
 }
 
 .ui.dropdown .menu > .channel_item {
@@ -817,7 +830,7 @@ i.icon1 {
   border-radius: 3px;
   color: #fff;
   font-family: "Roboto", sans-serif;
-  background: #13356d;
+  background: $sapphire;
   font-size: 14px;
   font-weight: 500;
   display: inline-block;
@@ -893,11 +906,19 @@ i.icon1 {
   font-size: 16px;
   display: inline-block;
   color: #f7f7f7;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .edu_social_links a:hover {
   color: #fff !important;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
   transform: scale(1.1);
 }
 
@@ -907,6 +928,7 @@ i.icon1 {
 }
 
 /*--- Index Homepage ---*/
+
 .wrapper {
   padding: 90px 0 0;
   transition: all 0.3s ease-out;
@@ -1052,6 +1074,7 @@ i.icon1 {
 }
 
 /* === Animation Loader === */
+
 .main-loader {
   float: left;
   width: 100%;
@@ -1100,21 +1123,31 @@ i.icon1 {
 }
 
 @-webkit-keyframes sk-bouncedelay {
-  0%, 80%, 100% {
+  0%,
+  80%,
+  100% {
     -webkit-transform: scale(0);
   }
+
   40% {
     -webkit-transform: scale(1);
   }
 }
+
 @keyframes sk-bouncedelay {
-  0%, 80%, 100% {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
     transform: scale(0);
   }
+
   40% {
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
 }
+
 .live1452 {
   margin-bottom: 25px;
   float: left;
@@ -1128,25 +1161,17 @@ i.icon1 {
   border-radius: 3px;
 }
 
-@-webkit-keyframes fade-in-up {
+@keyframes fade-in-up {
   0% {
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
   }
 }
 
-@keyframes fade-in-up {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 .stuck {
   position: fixed;
   bottom: 20px;
@@ -1154,41 +1179,32 @@ i.icon1 {
   transform: translateY(100%);
   width: 260px !important;
   height: 145px !important;
-  -webkit-animation: fade-in-up 0.25s ease forwards;
-          animation: fade-in-up 0.25s ease forwards;
+  animation: fade-in-up 0.25s ease forwards;
   z-index: 999;
 }
 
 /*Floating CSS End*/
-@-webkit-keyframes example {
-  0% {
-    background-color: red;
-  }
-  25% {
-    background-color: #ff7037;
-  }
-  50% {
-    background-color: red;
-  }
-  100% {
-    background-color: #ff7037;
-  }
-}
+
 @keyframes example {
   0% {
     background-color: red;
   }
+
   25% {
     background-color: #ff7037;
   }
+
   50% {
     background-color: red;
   }
+
   100% {
     background-color: #ff7037;
   }
 }
+
 /* --- Dashboard --- */
+
 .st_title {
   font-size: 20px;
   margin-top: 0 !important;
@@ -1271,7 +1287,7 @@ i.icon1 {
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   color: #fff;
-  background: #13356d;
+  background: $sapphire;
   padding: 0px 20px;
   border-radius: 3px;
   border: 0;
@@ -1554,16 +1570,16 @@ i.icon1 {
 .courses_performance .owl-nav .owl-prev:hover {
   color: #fff !important;
   opacity: 1;
-  background: #13356d !important;
-  border: 1px solid #13356d !important;
+  background: $sapphire !important;
+  border: 1px solid $sapphire !important;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.07);
 }
 
 .courses_performance .owl-nav .owl-next:hover {
   color: #fff !important;
   opacity: 1;
-  border: 1px solid #13356d !important;
-  background: #13356d !important;
+  border: 1px solid $sapphire !important;
+  background: $sapphire !important;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.07);
 }
 
@@ -1663,16 +1679,16 @@ i.icon1 {
 .edututs_news .owl-nav .owl-prev:hover {
   color: #fff !important;
   opacity: 1;
-  background: #13356d !important;
-  border: 1px solid #13356d !important;
+  background: $sapphire !important;
+  border: 1px solid $sapphire !important;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.07);
 }
 
 .edututs_news .owl-nav .owl-next:hover {
   color: #fff !important;
   opacity: 1;
-  border: 1px solid #13356d !important;
-  background: #13356d !important;
+  border: 1px solid $sapphire !important;
+  background: $sapphire !important;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.07);
 }
 
@@ -1713,7 +1729,7 @@ i.icon1 {
 }
 
 .analyics_pr {
-  color: #13356d;
+  color: $sapphire;
   font-weight: 500;
 }
 
@@ -1796,13 +1812,14 @@ i.icon1 {
   font-size: 12px;
   font-weight: 500;
   margin-left: 10px;
-  background: #13356d;
+  background: $sapphire;
   color: #fff;
   padding: 5px 10px;
   border-radius: 3px;
 }
 
 /* --- My Courses --- */
+
 .my_courses_tabs {
   margin-top: 50px;
 }
@@ -1822,12 +1839,12 @@ i.icon1 {
 .my_courses_tabs .nav-pills .nav-link.active,
 .my_courses_tabs .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #13356d !important;
+  background-color: $sapphire !important;
 }
 
 .my_courses_tabs .nav-pills .nav-link:hover {
   color: #fff !important;
-  background-color: #13356d !important;
+  background-color: $sapphire !important;
 }
 
 .my_courses_tabs .nav-link {
@@ -1930,7 +1947,7 @@ table {
 }
 
 .course_active {
-  color: #13356d;
+  color: $sapphire;
 }
 
 .ucp-table tbody tr td {
@@ -2009,7 +2026,7 @@ table {
 .panel-title > a:before {
   float: right !important;
   font-family: "Roboto", sans-serif;
-  content: "-";
+  content: "\-";
   padding-right: 0px;
   font-size: 20px;
   padding-top: 1px;
@@ -2017,7 +2034,7 @@ table {
 
 .panel-title > a.collapsed:before {
   float: right !important;
-  content: "+";
+  content: "\+";
 }
 
 .lbel25 label {
@@ -2095,15 +2112,15 @@ table {
 .datepicker--cell.-selected-,
 .datepicker--cell.-selected-.-current- {
   color: #fff;
-  background: #13356d !important;
+  background: $sapphire !important;
 }
 
 .datepicker--day-name {
-  color: #13356d !important;
+  color: $sapphire !important;
 }
 
 .datepicker--cell.-current- {
-  color: #13356d !important;
+  color: $sapphire !important;
 }
 
 .datepicker {
@@ -2126,7 +2143,7 @@ table {
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  background: #13356d;
+  background: $sapphire;
   width: 100%;
   text-align: center;
 }
@@ -2178,7 +2195,7 @@ table {
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  background: #13356d;
+  background: $sapphire;
   text-align: center;
   padding: 0 30px;
 }
@@ -2189,6 +2206,7 @@ table {
 }
 
 /* --- Analyics Dashboard Page --- */
+
 .analysis_card {
   background: #fff !important;
   border: 1px solid #efefef !important;
@@ -2310,7 +2328,7 @@ table {
 }
 
 .text-success1 {
-  color: #13356d !important;
+  color: $sapphire !important;
 }
 
 .thumb_img img {
@@ -2323,19 +2341,27 @@ table {
 }
 
 /* --- Add New Course --- */
+
 #add-course-tab {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 }
 
 #add-course-tab .step-steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding-left: 0;
 }
 
 #add-course-tab .step-steps > li {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25%;
   flex: 0 0 25%;
   max-width: 0 0 25%;
 }
@@ -2346,6 +2372,7 @@ table {
   left: 50%;
   top: 18px;
   width: 100%;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -2354,6 +2381,7 @@ table {
   height: 24px;
   background-color: #d1d1d1;
   border: 0px solid;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -2364,6 +2392,7 @@ table {
   width: calc(100% + 16px);
   top: -8px;
   left: -8px;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -2373,6 +2402,7 @@ table {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   margin-top: 20px;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -2382,7 +2412,7 @@ table {
 
 #add-course-tab .step-steps > li.active > a > .number,
 #add-course-tab .step-steps > li.done > a > .number {
-  background-color: #13356d;
+  background-color: $sapphire;
 }
 
 #add-course-tab .step-steps > li.active > a > .number:before,
@@ -2396,7 +2426,7 @@ table {
 }
 
 #add-course-tab .step-steps > li.done:before {
-  background-color: #13356d;
+  background-color: $sapphire;
 }
 
 #add-course-tab .step-steps > li.done > a > .number:after {
@@ -2476,6 +2506,7 @@ table {
   font-weight: 400;
   position: relative;
   text-align: left;
+  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   width: 100%;
 }
@@ -2510,15 +2541,22 @@ table {
   line-height: 0;
   color: #fff;
   content: "Upload File";
-  background-color: #13356d;
+  background-color: $sapphire;
   border-left: inherit;
   border-radius: 3px;
 }
 
 #add-course-tab .step-footer.step-tab-pager {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 30px;
   margin-bottom: 0px;
@@ -2536,7 +2574,11 @@ table {
 }
 
 .title-icon > .title {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
@@ -2563,7 +2605,7 @@ table {
 }
 
 .badge_num {
-  background: #13356d;
+  background: $sapphire;
   color: #fff;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
@@ -2578,7 +2620,7 @@ table {
 }
 
 .badge_num2 {
-  background: #13356d;
+  background: $sapphire;
   color: #fff;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
@@ -2627,7 +2669,7 @@ table {
   font-weight: 500 !important;
   font-family: "Roboto", sans-serif !important;
   color: #fff !important;
-  background: #13356d !important;
+  background: $sapphire !important;
   padding: 0px 20px !important;
   border-radius: 3px;
   border: 0 !important;
@@ -2744,6 +2786,7 @@ table {
   font-weight: 400;
   position: relative;
   text-align: left;
+  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   width: 100%;
 }
@@ -2778,22 +2821,29 @@ table {
   line-height: 0;
   color: #fff;
   content: "Upload File";
-  background-color: #13356d;
+  background-color: $sapphire;
   border-left: inherit;
   border-radius: 3px;
 }
 
 #add-course-tab .step-footer.step-tab-pager {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 30px;
   margin-bottom: 0px;
 }
 
 .badge_mb {
-  background: #13356d;
+  background: $sapphire;
   color: #fff;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
@@ -2817,7 +2867,7 @@ table {
 }
 
 .badge_min {
-  background: #13356d;
+  background: $sapphire;
   color: #fff;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
@@ -2849,7 +2899,7 @@ table {
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   color: #fff;
-  background: #13356d;
+  background: $sapphire;
   padding: 0px 30px;
   border-radius: 3px;
   border: 0;
@@ -2864,18 +2914,18 @@ table {
 .ui.checkbox input:checked ~ .box:before,
 .ui.checkbox input:checked ~ label:before {
   background: #fff;
-  border-color: #13356d !important;
+  border-color: $sapphire !important;
 }
 
 .ui.radio.checkbox input:checked ~ .box:after,
 .ui.radio.checkbox input:checked ~ label:after {
-  background-color: #13356d !important;
+  background-color: $sapphire !important;
 }
 
 .ui.checkbox.mncheck input:checked ~ .box:after,
 .ui.checkbox.mncheck input:checked ~ label:after {
   opacity: 1;
-  color: #13356d !important;
+  color: $sapphire !important;
   font-size: 10px !important;
   border-radius: 3px;
   margin-top: 0.5px;
@@ -2932,7 +2982,7 @@ table {
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   color: #fff;
-  background: #13356d;
+  background: $sapphire;
   padding: 0px 30px;
   border-radius: 3px;
   border: 0;
@@ -2945,6 +2995,7 @@ table {
 }
 
 /* --- Messages Page --- */
+
 .all_msg_bg {
   background: #fff;
   margin-top: 30px;
@@ -2988,7 +3039,7 @@ i.icon8 {
 
 .chat__message__dt.active,
 .chat__message__dt:hover {
-  border-left: 4px solid #13356d;
+  border-left: 4px solid $sapphire;
   background: #ffecec;
 }
 
@@ -3019,7 +3070,7 @@ i.icon8 {
   border: 2px solid #fff;
   height: 22px;
   width: 22px;
-  background: #13356d;
+  background: $sapphire;
   position: absolute;
   right: 10px;
   bottom: 2px;
@@ -3138,6 +3189,7 @@ i.icon8 {
 }
 
 /* === main-message-box === */
+
 .mCustomScrollbar {
   padding-top: 20px;
 }
@@ -3196,6 +3248,10 @@ i.icon8 {
 
 .messg-usr-img img {
   width: 100%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
   border-radius: 3px;
 }
 
@@ -3227,6 +3283,10 @@ i.icon8 {
 
 .message-inner-dt {
   float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
   border-radius: 3px;
 }
 
@@ -3254,12 +3314,16 @@ i.icon8 {
 .message-inner-dt > p {
   float: right;
   width: 60%;
-  background-color: #13356d;
+  background-color: $sapphire;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   line-height: 22px;
   padding: 12px 20px;
   color: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
   border-radius: 3px;
   margin-bottom: 0;
 }
@@ -3312,7 +3376,7 @@ i.icon8 {
   font-weight: 500;
   font-size: 18px;
   color: #fff;
-  background: #13356d;
+  background: $sapphire;
   height: 40px;
   float: left;
 }
@@ -3331,7 +3395,7 @@ i.icon8 {
   width: 50px;
   font-size: 18px;
   color: #fff;
-  background: #13356d;
+  background: $sapphire;
 }
 
 .add_photo:hover {
@@ -3358,7 +3422,7 @@ i.icon8 {
   float: left;
   padding: 10px 20px;
   color: #fff;
-  background: #13356d;
+  background: $sapphire;
   border-radius: 3px;
   font-size: 14px;
   font-weight: 500;
@@ -3371,6 +3435,7 @@ i.icon8 {
 }
 
 /* --- My Certificates --- */
+
 .table-cerificate {
   float: left;
   width: 100%;
@@ -3378,6 +3443,7 @@ i.icon8 {
 }
 
 /* --- All Reviews --- */
+
 .student_reviews {
   float: left;
   width: 100%;
@@ -3443,7 +3509,7 @@ i.icon8 {
 
 .full-star:before {
   color: #f2b01e;
-  content: "";
+  content: "\f005";
   position: absolute;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -3451,7 +3517,7 @@ i.icon8 {
 }
 
 .empty-star:before {
-  content: "";
+  content: "\f005";
   position: absolute;
   left: 0;
   overflow: hidden;
@@ -3461,7 +3527,7 @@ i.icon8 {
 
 .half-star:before {
   color: #f2b01e;
-  content: "";
+  content: "\f005";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   width: 60%;
@@ -3471,7 +3537,7 @@ i.icon8 {
 }
 
 .half-star:after {
-  content: "";
+  content: "\f005";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   left: 1.5rem;
@@ -3490,6 +3556,9 @@ i.icon8 {
   line-height: 22px;
 }
 
+._rate003 {
+}
+
 ._rate004 {
   display: flex;
   cursor: pointer;
@@ -3506,7 +3575,7 @@ i.icon8 {
 }
 
 .progress1 .progress-bar {
-  background-color: #13356d !important;
+  background-color: $sapphire !important;
 }
 
 .w-70 {
@@ -3577,7 +3646,7 @@ i.icon8 {
   border: 0;
   height: 26px;
   width: 26px;
-  background: #13356d;
+  background: $sapphire;
   color: #fff;
   font-size: 14px;
 }
@@ -3678,6 +3747,7 @@ i.icon8 {
 }
 
 /* --- Earning Page --- */
+
 .earning_steps {
   border-radius: 3px;
   background: #333;
@@ -3791,7 +3861,7 @@ i.icon8 {
 .ui.active.selection.vchrt-dropdown {
   border-top-left-radius: 1.5rem !important;
   border-top-right-radius: 1.5rem !important;
-  border: 1px solid #13356d !important;
+  border: 1px solid $sapphire !important;
 }
 
 .date_list152 a {
@@ -3814,6 +3884,7 @@ i.icon8 {
 }
 
 /* --- Payout Page --- */
+
 .payout_content {
   padding: 20px;
   float: left;
@@ -3867,7 +3938,7 @@ i.icon8 {
 }
 
 .payout__btn {
-  background: #13356d;
+  background: $sapphire;
   color: #fff;
   float: left;
   width: 100%;
@@ -3886,6 +3957,7 @@ i.icon8 {
 }
 
 /* --- Statements Page --- */
+
 .statement_content {
   padding: 20px 20px 30px;
   float: left;
@@ -3936,7 +4008,7 @@ i.icon8 {
 }
 
 .js-earnings__fees-wrapper {
-  color: #13356d;
+  color: $sapphire;
 }
 
 .statement_invoice_content {
@@ -3953,7 +4025,7 @@ i.icon8 {
   padding: 0 8px;
   border-radius: 3px;
   margin-left: 10px;
-  background: #13356d;
+  background: $sapphire;
 }
 
 .st_download_btn:hover {
@@ -4067,7 +4139,7 @@ i.icon8 {
 
 .edututs_required_img i {
   font-size: 36px;
-  color: #13356d;
+  color: $sapphire;
 }
 
 .apply_verify_text {
@@ -4099,7 +4171,7 @@ i.icon8 {
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   color: #fff;
-  background: #13356d;
+  background: $sapphire;
   padding: 0px 30px;
   border-radius: 3px;
   border: 0;
@@ -4118,6 +4190,7 @@ i.icon8 {
 }
 
 /* --- Night Mode Btn --- */
+
 .night_mode_switch__btn {
   border-bottom: 1px solid #efefef;
 }

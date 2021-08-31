@@ -9,10 +9,7 @@
     {!! SEO::generate() !!}
     <title>{{env("APP_NAME")}}</title>
 
-
-  
     <link rel="icon" type="image/png" href="{{ static_asset('frontend/images/fav.png') }}">
-
 
     @include('frontend.inc.styles')
     <style>
@@ -27,7 +24,7 @@
         <div class="row justify-content-lg-center justify-content-md-center">
             <div class="col-lg-12">
                 <div class="main_logo25" id="logo">
-                    <a href="{{url('/')}}"><img src="{{ static_asset('frontend/images/logo.svg') }}" alt=""></a>
+                    <a href="{{url('/')}}"><img src="{{ static_asset('frontend/images/logo-global-team-main.svg') }}" alt=""></a>
                     <a href="{{url('/')}}"><img class="logo-inverse" src="{{ static_asset('frontend/images/ct_logo.svg') }}"
                             alt=""></a>
                 </div>
