@@ -24,6 +24,8 @@ mix
     "resources/sass/frontend/vertical-responsive-menu.scss",
     "public/frontend/css"
   )
+  .sass("resources/sass/frontend/night-mode.scss", "public/frontend/css")
+  .sass("resources/sass/admin/style.scss", "public/admin/assets/css")
   .options({
     processCssUrls: false,
   });

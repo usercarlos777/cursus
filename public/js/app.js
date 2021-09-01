@@ -34495,6 +34495,32 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
 /***/ }),
 
+/***/ "./resources/sass/frontend/night-mode.scss":
+/*!*************************************************!*\
+  !*** ./resources/sass/frontend/night-mode.scss ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/sass/admin/style.scss":
+/*!*****************************************!*\
+  !*** ./resources/sass/admin/style.scss ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
@@ -49775,7 +49801,9 @@ Vue.compile = compileToFunctions;
 /******/ 			"frontend/css/style": 0,
 /******/ 			"frontend/css/instructor-dashboard": 0,
 /******/ 			"css/app": 0,
-/******/ 			"frontend/css/vertical-responsive-menu": 0
+/******/ 			"admin/assets/css/style": 0,
+/******/ 			"frontend/css/vertical-responsive-menu": 0,
+/******/ 			"frontend/css/night-mode": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -49823,11 +49851,13 @@ Vue.compile = compileToFunctions;
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["frontend/css/style","frontend/css/instructor-dashboard","css/app","frontend/css/vertical-responsive-menu"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["frontend/css/style","frontend/css/instructor-dashboard","css/app","frontend/css/vertical-responsive-menu"], () => (__webpack_require__("./resources/sass/app.scss")))
-/******/ 	__webpack_require__.O(undefined, ["frontend/css/style","frontend/css/instructor-dashboard","css/app","frontend/css/vertical-responsive-menu"], () => (__webpack_require__("./resources/sass/frontend/instructor-dashboard.scss")))
-/******/ 	__webpack_require__.O(undefined, ["frontend/css/style","frontend/css/instructor-dashboard","css/app","frontend/css/vertical-responsive-menu"], () => (__webpack_require__("./resources/sass/frontend/style.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["frontend/css/style","frontend/css/instructor-dashboard","css/app","frontend/css/vertical-responsive-menu"], () => (__webpack_require__("./resources/sass/frontend/vertical-responsive-menu.scss")))
+/******/ 	__webpack_require__.O(undefined, ["frontend/css/style","frontend/css/instructor-dashboard","css/app","admin/assets/css/style","frontend/css/vertical-responsive-menu","frontend/css/night-mode"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["frontend/css/style","frontend/css/instructor-dashboard","css/app","admin/assets/css/style","frontend/css/vertical-responsive-menu","frontend/css/night-mode"], () => (__webpack_require__("./resources/sass/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["frontend/css/style","frontend/css/instructor-dashboard","css/app","admin/assets/css/style","frontend/css/vertical-responsive-menu","frontend/css/night-mode"], () => (__webpack_require__("./resources/sass/frontend/instructor-dashboard.scss")))
+/******/ 	__webpack_require__.O(undefined, ["frontend/css/style","frontend/css/instructor-dashboard","css/app","admin/assets/css/style","frontend/css/vertical-responsive-menu","frontend/css/night-mode"], () => (__webpack_require__("./resources/sass/frontend/style.scss")))
+/******/ 	__webpack_require__.O(undefined, ["frontend/css/style","frontend/css/instructor-dashboard","css/app","admin/assets/css/style","frontend/css/vertical-responsive-menu","frontend/css/night-mode"], () => (__webpack_require__("./resources/sass/frontend/vertical-responsive-menu.scss")))
+/******/ 	__webpack_require__.O(undefined, ["frontend/css/style","frontend/css/instructor-dashboard","css/app","admin/assets/css/style","frontend/css/vertical-responsive-menu","frontend/css/night-mode"], () => (__webpack_require__("./resources/sass/frontend/night-mode.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["frontend/css/style","frontend/css/instructor-dashboard","css/app","admin/assets/css/style","frontend/css/vertical-responsive-menu","frontend/css/night-mode"], () => (__webpack_require__("./resources/sass/admin/style.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

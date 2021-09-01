@@ -141,7 +141,7 @@
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="card card-statistic-2">
 
-                    <div class="card-icon shadow-primary bg-primary">
+                    <div class="card-icon shadow-danger bg-danger">
                         <i class="far fa-trash-alt"></i>
                     </div>
                     <div class="card-wrap">

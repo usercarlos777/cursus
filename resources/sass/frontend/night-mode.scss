@@ -1,6 +1,9 @@
 /****************
 Night Mood
 ****************/
+
+@import "../colors";
+
 .btn-night-mode .btn-night-mode-switch {
   display: inline-block;
   height: 18px;
@@ -58,7 +61,7 @@ Night Mood
 .night-mode .post .post-add-comment-text-area input {
   background-color: #000 !important;
   border-color: #242424 !important;
-  color: rgba(255, 255, 255, 0.79) !important;
+  color: hsla(0, 0%, 100%, 0.79) !important;
 }
 
 .night-mode body {
@@ -89,7 +92,8 @@ Night Mood
   background-clip: padding-box;
   -webkit-border-radius: 7px;
   background-color: rgba(51, 51, 51, 0.6);
-  -webkit-box-shadow: inset -1px -1px 0 rgba(51, 51, 51, 0.05), inset 1px 1px 0 rgba(51, 51, 51, 0.05);
+  -webkit-box-shadow: inset -1px -1px 0 rgba(51, 51, 51, 0.05),
+    inset 1px 1px 0 rgba(51, 51, 51, 0.05);
 }
 
 .night-mode .header {
@@ -120,7 +124,7 @@ Night Mood
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   color: #fff !important;
-  background: #13356d;
+  background: $sapphire;
   padding: 9px 15px;
   border-radius: 25px;
   margin-right: 10px;
@@ -133,7 +137,7 @@ Night Mood
 
 .night-mode .upload_btn:hover {
   color: #fff !important;
-  background: #174083 !important;
+  background: lighten($sapphire, 5%) !important;
 }
 
 .night-mode .menu.dropdown_ms {
@@ -503,13 +507,13 @@ Night Mood
 }
 
 .night-mode .live_link {
-  background: #13356d;
+  background: $sapphire;
   color: #fff !important;
 }
 
 .night-mode .live_link:hover {
   color: #fff;
-  background: #174083;
+  background: lighten($sapphire, 5%);
 }
 
 .night-mode .tutor_social_links li a {
@@ -668,7 +672,7 @@ Night Mood
 
 .night-mode .ui.toggle.checkbox .box:before,
 .night-mode .ui.toggle.checkbox label:before {
-  background-color: #242424 !important;
+  background-color: rgba(36, 36, 36) !important;
 }
 
 .night-mode ._1457s2 label {
@@ -706,6 +710,7 @@ Night Mood
 }
 
 /* === Animation Loader === */
+
 .night-mode .spinner {
   margin: 0 auto 0;
   width: 50px;
@@ -748,21 +753,29 @@ Night Mood
 }
 
 @-webkit-keyframes sk-bouncedelay {
-  0%, 80%, 100% {
+  0%,
+  80%,
+  100% {
     -webkit-transform: scale(0);
   }
   40% {
     -webkit-transform: scale(1);
   }
 }
+
 @keyframes sk-bouncedelay {
-  0%, 80%, 100% {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
     transform: scale(0);
   }
   40% {
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
 }
+
 .night-mode ._215b15 {
   background: #333;
 }
@@ -1538,6 +1551,7 @@ Night Mood
 }
 
 /* Instructor Dashbaord Studio */
+
 .night-mode .card_dash {
   background: #333;
   border: 1px solid #242424;
@@ -1799,7 +1813,11 @@ Night Mood
   border: 1px solid #242424;
 }
 
-.night-mode #add-course-tab > .step-content .step-tab-gallery .custom-file-label {
+.night-mode
+  #add-course-tab
+  > .step-content
+  .step-tab-gallery
+  .custom-file-label {
   color: #c7c7c7;
   background-color: #333;
   border: 1px solid #242424;
@@ -1957,7 +1975,9 @@ Night Mood
   color: #fff;
 }
 
-.night-mode .ui.selection.vchrt-dropdown.visible.dropdown > .text:not(.default) {
+.night-mode
+  .ui.selection.vchrt-dropdown.visible.dropdown
+  > .text:not(.default) {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.8);
 }
@@ -2111,7 +2131,6 @@ Night Mood
 .night-mode #logo img {
   display: none;
 }
-
 .night-mode #logo .logo-inverse {
   display: inline !important;
 }
@@ -2295,7 +2314,7 @@ Night Mood
 .night-mode .uk-overlay-default,
 .night-mode .uk-table-striped > tr:nth-of-type(odd),
 .night-mode .uk-table-striped tbody tr:nth-of-type(odd),
-.night-mode .glyph.fs1:hover span:not([class*=mls]) {
+.night-mode .glyph.fs1:hover span:not([class*="mls"]) {
   background: #12141e !important;
 }
 
@@ -2316,7 +2335,7 @@ Night Mood
 .night-mode .uk-textarea:disabled,
 .night-mode .uk-heading-bullet::before,
 .night-mode .uk-divider-small::after,
-.night-mode .uk-list-divider > li:nth-child(n+2),
+.night-mode .uk-list-divider > li:nth-child(n + 2),
 .night-mode .uk-table-divider > tr:not(:first-child),
 .night-mode .uk-table-divider > :not(:first-child) > tr,
 .night-mode .uk-list-large.uk-list-striped > li:nth-of-type(odd),
@@ -2373,7 +2392,7 @@ Night Mood
 }
 
 .night-mode header .head_search .head_search_cont input:focus {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 .night-mode .responsive-tab.style-4 .uk-active a:before,
@@ -2386,7 +2405,6 @@ Night Mood
 .night-mode .post .post-state-details * img {
   border-color: #08090f;
 }
-
 .night-mode .btn-subscribe .button:before,
 .night-mode .post-comment-text::before {
   border-right-color: #201f23;
